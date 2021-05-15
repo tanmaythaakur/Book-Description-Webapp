@@ -10,11 +10,13 @@ import 'hammerjs';
 import { BooklistComponent } from './booklist/booklist.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { BookdetailComponent } from './bookdetail/bookdetail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BooklistComponent
+    BooklistComponent,
+    BookdetailComponent
   ],
   imports: [
     BrowserModule,
