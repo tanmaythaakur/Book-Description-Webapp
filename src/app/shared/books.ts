@@ -10,7 +10,7 @@ export const BOOKS: Book[] = [
         featured: true,
         label: 'Classic',
         price: 'Rs. 290',
-        description: 'Harry Potter tries to find out who opened the Chamber of Dark Secrets unleashing the fatal reptile - Basilisk.',
+        description: 'Harry Potter\'s summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone . Dobby\'s sinister predictions seem to be coming true.',
         comments: [
             {
                 rating: 5,
@@ -47,7 +47,7 @@ export const BOOKS: Book[] = [
         featured: false,
         label: 'Philosophical',
         price: 'Rs. 250',
-        description: 'The enlightenment journey of a litigation lawyer during his exploration of Himalayas.',
+        description: 'The Monk Who Sold His Ferrari is a revealing story that offers the readers a simple yet profound way to live life. The plot of this story revolves around Julian Mantle, a lawyer who has made his fortune and name in the profession. A sudden heart-attack creates havoc in the successful lawyer’s life. Jolted by the sudden onset of the illness, his practice comes to a standstill.',
         comments: [
             {
                 rating: 5,
@@ -84,7 +84,7 @@ export const BOOKS: Book[] = [
         featured: false,
         label: 'Eye-Opening',
         price: 'Rs. 450',
-        description: 'Dr. Jordan Peterson lists out 12 more rules for life this sequel.',
+        description: 'Now in this much-anticipated sequel, Peterson goes further, showing that part of life\'s meaning comes from reaching out into the domain beyond what we know, and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality. Beyond Order therefore calls on us to balance the two fundamental principles of reality - order and chaos ­- and reveals the profound meaning that can be found on the path that divides them.',
         comments: [
             {
                 rating: 5,
@@ -107,7 +107,7 @@ export const BOOKS: Book[] = [
             {
                 rating: 4,
                 comment: 'Ultimate, Reaching for the stars!',
-                author: 'Next level content',
+                author: 'Shivam Ram Chandra',
                 date: '2013-12-02T17:57:28.556094Z'
             },
         ],
@@ -121,7 +121,7 @@ export const BOOKS: Book[] = [
         featured: false,
         label: 'History',
         price: 'Rs. 300',
-        description: 'Sapiens is a short telling of the entire human history.',
+        description: ' Earth is 4.5 billion years old. In just a fraction of that time, one species among countless others has conquered it: us. In this bold and provocative book, Yuval Noah Harari explores who we are, how we got here and where we\'re going. ',
         comments: [
             {
                 rating: 5,

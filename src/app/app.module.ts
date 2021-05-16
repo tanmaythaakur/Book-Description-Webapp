@@ -11,12 +11,17 @@ import { BooklistComponent } from './booklist/booklist.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { BookdetailComponent } from './bookdetail/bookdetail.component';
+import { BookService } from './services/book.service';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BooklistComponent,
-    BookdetailComponent
+    BookdetailComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +33,9 @@ import { BookdetailComponent } from './bookdetail/bookdetail.component';
     MatCardModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [
+    BookService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
