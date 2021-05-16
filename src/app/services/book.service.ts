@@ -14,7 +14,7 @@ export class BookService {
   }
 
   getBook(id: string): Book {
-    return BOOKS.filter((book) => { (book.id === id)})[0];
+    return BOOKS.filter((book) => (book.id === id))[0];
   }
 
   getFeaturedBook(): Book {

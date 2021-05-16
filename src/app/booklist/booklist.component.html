@@ -11,7 +11,7 @@
 
   <div fxFlex>
     <mat-grid-list cols="2" rowHeight="200px">
-      <mat-grid-tile *ngFor="let book of books" (click)="onSelect(book)">
+      <mat-grid-tile *ngFor="let book of books" [routerLink] = "['/bookdetail', book.id]">
         <img height="200px" src={{book.image}} alt={{book.name}}>
         <mat-grid-tile-footer>
           <h1 matLine> {{book.name | uppercase}} </h1>
@@ -19,10 +19,5 @@
       </mat-grid-tile>
     </mat-grid-list>
   </div>
-
-  <app-bookdetail [book]="selectedBook">
-
-  </app-bookdetail>
-  
 
 </div>
