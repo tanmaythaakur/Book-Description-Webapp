@@ -21,6 +21,7 @@ import { ContactComponent } from './contact/contact.component';
 
 import { BookService } from './services/book.service';
 import { PromotionService} from './services/promotion.service';
+import { AuthorService } from './services/author.service';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 
@@ -48,7 +49,8 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
   ],
   providers: [
     BookService,
-    PromotionService
+    PromotionService,
+    AuthorService
   ],
   bootstrap: [AppComponent]
 })

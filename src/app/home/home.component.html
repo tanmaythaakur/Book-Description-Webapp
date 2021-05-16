@@ -8,10 +8,25 @@
         <h3>{{book.name | uppercase}}</h3>
       </mat-card-title>
     </mat-card-header>
-    <img mat-card-image src={{book.image}} alt={{book.name}}>
+    <img mat-card-image src={{book.image}} alt={{book.name}} width="33%" height="500px">
     <mat-card-content>
       <h3>By {{book.author}}</h3>
       <p>{{book.description}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card *ngIf="author" fxFlex>
+    <mat-card-header>
+      <div mat-card-avatar></div>
+      <mat-card-title>
+        <h3>{{author.name | uppercase}} {{ author.abbr | uppercase }}</h3>
+      </mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src={{author.image}} alt={{author.name}}>
+    <mat-card-content>
+      <p>{{ author.designation }}</p>
+      <p>{{author.description}}
       </p>
     </mat-card-content>
   </mat-card>
@@ -23,7 +38,7 @@
         <h3>{{promotion.name | uppercase}}</h3>
       </mat-card-title>
     </mat-card-header>
-    <img mat-card-image src={{promotion.image}} alt={{promotion.name}}>
+    <img mat-card-image src={{promotion.image}} alt={{promotion.name}} width="33%" height="500px">
     <mat-card-content>
       <h3>By {{promotion.author}}</h3>
       <p>{{promotion.description}}

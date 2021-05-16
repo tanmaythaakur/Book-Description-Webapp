@@ -10,6 +10,6 @@ export const PROMOTIONS: Promotion[] = [
         featured: true,
         label: 'Best-Seller',
         price: 'Rs. 450',
-        description: 'Now in this much-anticipated sequel, Peterson goes further, showing that part of life\'s meaning comes from reaching out into the domain beyond what we know, and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality. Beyond Order therefore calls on us to balance the two fundamental principles of reality - order and chaos ­- and reveals the profound meaning that can be found on the path that divides them.'
+        description: 'Now in this much-anticipated sequel, Peterson goes further, showing that part of life\'s meaning comes from reaching out into the domain beyond what we know, and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality.'
     }
 ];
