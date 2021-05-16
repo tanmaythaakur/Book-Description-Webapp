@@ -37,7 +37,7 @@ export const AUTHORS: Author[] = [
         image: '/assets/images/JK_Rowling.jpg',
         age: "55",
         books: "The Harry Potter Series.",
-        featured: true,
+        featured: false,
         // tslint:disable-next-line:max-line-length
         description: 'J. K. Rowling is a British author, philanthropist, film producer, television producer, and screenwriter.'
         }

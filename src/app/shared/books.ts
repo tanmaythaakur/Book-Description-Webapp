@@ -7,8 +7,8 @@ export const BOOKS: Book[] = [
         author: 'J.K. Rowling',
         image: '/assets/images/Harry_Potter_2.png',
         genre: 'Fiction',
-        featured: true,
-        label: 'Classic',
+        featured: false,
+        label: 'Best Fiction',
         price: 'Rs. 290',
         description: 'Harry Potter\'s summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone . Dobby\'s sinister predictions seem to be coming true.',
         comments: [
@@ -81,8 +81,8 @@ export const BOOKS: Book[] = [
         author: 'Dr. Jordan Peterson',
         image: '/assets/images/Beyond_order.png',
         genre: 'Psychology',
-        featured: false,
-        label: 'Eye-Opening',
+        featured: true,
+        label: 'Best Seller',
         price: 'Rs. 450',
         description: 'Now in this much-anticipated sequel, Peterson goes further, showing that part of life\'s meaning comes from reaching out into the domain beyond what we know, and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality.',
         comments: [

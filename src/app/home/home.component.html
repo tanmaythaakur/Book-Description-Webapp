@@ -5,7 +5,8 @@
     <mat-card-header>
       <div mat-card-avatar></div>
       <mat-card-title>
-        <h3>{{book.name | uppercase}}</h3>
+        <h1>{{book.label}}</h1>
+        <h3><em>{{book.name | uppercase}}</em></h3>
       </mat-card-title>
     </mat-card-header>
     <img mat-card-image src={{book.image}} alt={{book.name}} width="33%" height="500px">
@@ -20,7 +21,8 @@
     <mat-card-header>
       <div mat-card-avatar></div>
       <mat-card-title>
-        <h3>{{author.name | uppercase}} {{ author.abbr | uppercase }}</h3>
+        <h1>Author of the week</h1>
+        <h3><em>{{author.name | uppercase}} {{ author.abbr | uppercase }}</em></h3>
       </mat-card-title>
     </mat-card-header>
     <img mat-card-image src={{author.image}} alt={{author.name}}>
@@ -35,7 +37,8 @@
     <mat-card-header>
       <div mat-card-avatar></div>
       <mat-card-title>
-        <h3>{{promotion.name | uppercase}}</h3>
+        <h1>Promoting Today: </h1>
+        <h3><em>{{promotion.name | uppercase}}</em></h3>
       </mat-card-title>
     </mat-card-header>
     <img mat-card-image src={{promotion.image}} alt={{promotion.name}} width="33%" height="500px">
