@@ -12,4 +12,12 @@ export class BookService {
   getBooks(): Book[] {
     return BOOKS;
   }
+
+  getBook(id: string): Book {
+    return BOOKS.filter((book) => { (book.id === id)})[0];
+  }
+
+  getFeaturedBook(): Book {
+    return BOOKS.filter((book) => book.featured)[0];
+  }
 }
