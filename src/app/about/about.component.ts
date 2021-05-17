@@ -17,7 +17,7 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.authorService.getAuthors()
-    .then((authors => this.authors = authors);
+    .subscribe((authors => this.authors = authors));
   }
 
   onSelect(author: Author) {

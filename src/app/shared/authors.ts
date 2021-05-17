@@ -23,7 +23,7 @@ export const AUTHORS: Author[] = [
     },
     {
         id: '2',
-        name: 'Yuval Noah Harai',
+        name: 'Yuval Noah Harari',
         image: '/assets/images/Yuval_Noah_Harari.jpg',
         age: "45",
         books: "Sapiens, Homo Deus, 21 Lessons for the 21st Century.",

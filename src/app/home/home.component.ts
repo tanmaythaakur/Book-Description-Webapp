@@ -20,11 +20,11 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.bookService.getFeaturedBook()
-    .then(book => this.book = book);
+    .subscribe(book => this.book = book);
     this.promotionService.getFeaturedPromotion()
-    .then(promotion => this.promotion = promotion);
+    .subscribe(promotion => this.promotion = promotion);
     this.authorService.getFeaturedAuthor()
-    .then(author => this.author = author);
+    .subscribe(author => this.author = author);
   }
 
 }
