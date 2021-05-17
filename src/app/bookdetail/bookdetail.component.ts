@@ -20,7 +20,8 @@ export class BookdetailComponent implements OnInit {
   ngOnInit() {
     let id = this.route.snapshot.params['id'];
     // console.log(id);
-    this.book = this.bookService.getBook(id);
+    this.bookService.getBook(id).then(book => this.book = book);
+    // this.book = this.bookService.getBook(id);
   }
 
   goBack(): void {

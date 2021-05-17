@@ -9,15 +9,15 @@ export class BookService {
 
   constructor() { }
 
-  getBooks(): Book[] {
-    return BOOKS;
+  getBooks(): Promise<Book[]> {
+    return Promise.resolve(BOOKS);
   }
 
-  getBook(id: string): Book {
-    return BOOKS.filter((book) => (book.id === id))[0];
+  getBook(id: string): Promise<Book> {
+    return Promise.resolve(BOOKS.filter((book) => (book.id === id))[0]);
   }
 
-  getFeaturedBook(): Book {
-    return BOOKS.filter((book) => book.featured)[0];
+  getFeaturedBook(): Promise<Book> {
+    return Promise.resolve(BOOKS.filter((book) => book.featured)[0]);
   }
 }

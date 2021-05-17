@@ -16,7 +16,8 @@ export class AboutComponent implements OnInit {
   constructor(private authorService: AuthorService) { }
 
   ngOnInit() {
-    this.authors = this.authorService.getAuthors();
+    this.authorService.getAuthors()
+    .then((authors => this.authors = authors);
   }
 
   onSelect(author: Author) {

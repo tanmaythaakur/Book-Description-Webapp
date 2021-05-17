@@ -9,15 +9,16 @@ export class AuthorService {
 
   constructor() { }
 
-  getAuthors(): Author[] {
-    return AUTHORS;
+  getAuthors(): Promise<Author[]> {
+    return Promise.resolve(AUTHORS);
   }
 
-  getAuthor(id: string): Author {
-    return AUTHORS.filter((author) => (author.id === id))[0];
+  getAuthor(id: string): Promise<Author> {
+    return Promise.resolve(AUTHORS.filter((author) => (author.id === id))[0]);
   }
 
-  getFeaturedAuthor(): Author {
-    return AUTHORS.filter((author) => author.featured)[0];
+  getFeaturedAuthor(): Promise<Author> {
+    return Promise.resolve(AUTHORS.filter((author) => author.featured)[0]);
   }
+
 }
