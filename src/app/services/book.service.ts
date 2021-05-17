@@ -10,14 +10,24 @@ export class BookService {
   constructor() { }
 
   getBooks(): Promise<Book[]> {
-    return Promise.resolve(BOOKS);
+    return new Promise(resolve => {
+      // Simulate 2 second delay to mimic real website
+      setTimeout(() => resolve(BOOKS), 2000);
+    });
   }
 
   getBook(id: string): Promise<Book> {
-    return Promise.resolve(BOOKS.filter((book) => (book.id === id))[0]);
+    return new Promise(resolve => {
+      // Simulate 2 second delay to mimic real website
+      setTimeout(() => resolve(BOOKS.filter((book) => (book.id === id))[0]), 2000);
+    });
   }
 
+    
   getFeaturedBook(): Promise<Book> {
-    return Promise.resolve(BOOKS.filter((book) => book.featured)[0]);
+    return new Promise(resolve => {
+      // Simulate 2 second delay to mimic real website
+      setTimeout(() => resolve(BOOKS.filter((book) => book.featured)[0]), 2000);
+    });
   }
 }

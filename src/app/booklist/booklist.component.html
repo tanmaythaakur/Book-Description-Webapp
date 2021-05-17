@@ -9,7 +9,7 @@
     </div>
   </div>
 
-  <div fxFlex>
+  <div fxFlex *ngIf="books">
     <mat-grid-list cols="2" rowHeight="200px">
       <mat-grid-tile *ngFor="let book of books" [routerLink] = "['/bookdetail', book.id]">
         <img height="200px" src={{book.image}} alt={{book.name}}>
@@ -18,6 +18,11 @@
         </mat-grid-tile-footer>
       </mat-grid-tile>
     </mat-grid-list>
+  </div>
+
+  <div fxFlex [hidden]='books'>
+    <mat-spinner></mat-spinner>
+    <h4>Loading... Please Wait</h4>
   </div>
 
 </div>

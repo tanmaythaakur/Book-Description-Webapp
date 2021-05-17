@@ -48,7 +48,7 @@
   <div fxFlex>
     <h2>Top Authors at a glance</h2>
     <div>
-      <mat-list fxFlex>
+      <mat-list *ngIf="authors">
         <mat-list-item *ngFor="let author of authors">
           <img matListAvatar src={{author.image}} alt={{author.name}}>
           <h1 matLine> {{author.name}} </h1>
@@ -57,6 +57,11 @@
           </p>
         </mat-list-item>
       </mat-list>
+    </div>
+    
+    <div [hidden]="authors">
+      <mat-spinner></mat-spinner>
+      <h4>Loading . . . Please Wait</h4>
     </div>
 
   </div>
