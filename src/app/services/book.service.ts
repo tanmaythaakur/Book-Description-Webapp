@@ -11,6 +11,10 @@ export class BookService {
 
   constructor() { }
 
+  getBookIds(): Observable<string[] | any> {
+    return of(BOOKS.map(book => book.id ));
+  }
+
   getBooks(): Observable<Book[]> {
     return of(BOOKS).pipe(delay(2000));
   }

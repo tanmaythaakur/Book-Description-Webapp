@@ -1,8 +1,8 @@
 <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
   fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
 
-  <div fxFlex="40">
-    <div fxFlex *ngIf="book">
+  <div fxFlex="40" *ngIf="book">
+    <div fxFlex>
       <mat-card>
         <mat-card-header>
           <mat-card-title>
@@ -14,18 +14,20 @@
         <mat-card-content>
           <p>{{book.description}}</p>
           <mat-card-actions>
+            <button mat-button [routerLink]="['/bookdetail', prev]"><span class="fa fa-chevron-left fa-lg"></span></button>
             <button mat-button (click)="goBack()">BACK</button>
             <button mat-button>LIKE</button>
             <button mat-button>SHARE</button>
+            <span class="flex-spacer"></span>
+            <button mat-button [routerLink]="['/bookdetail', next]"><span class="fa fa-chevron-right fa-lg"></span></button>
           </mat-card-actions>
         </mat-card-content>
       </mat-card>
     </div>
   </div>
 
-  <div fxFlex="40">
-    <div>
-      <mat-list *ngIf="book">
+  <div fxFlex="40" *ngIf="book">
+      <mat-list>
         <h3 matLine>Comments</h3>
         <mat-list-item *ngFor="let cmt of book.comments">
           <p matLine>{{cmt.comment}}</p>
@@ -34,7 +36,6 @@
           <p matLine>{{cmt.date | date}}</p>
         </mat-list-item>
       </mat-list>
-    </div>
   </div>
 
   <div [hidden]="book">
