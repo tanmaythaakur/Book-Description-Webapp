@@ -9,7 +9,7 @@
     </div>
   </div>
 
-  <div fxFlex *ngIf="books">
+  <div fxFlex *ngIf="books" [@expand]>
     <mat-grid-list cols="2" rowHeight="200px">
       <mat-grid-tile *ngFor="let book of books" [routerLink] = "['/bookdetail', book.id]" appHighlight>
         <img height="200px" src="{{ BaseURL + book.image }}" alt={{book.name}}>
