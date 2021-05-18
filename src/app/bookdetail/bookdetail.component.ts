@@ -21,6 +21,7 @@ export class BookdetailComponent implements OnInit {
   next: string;
   commentForm: FormGroup;
   comment: Comment;
+  bookcopy: Book;
   @ViewChild('fform') commentFormDirective;
 
   formErrors = {
@@ -50,7 +51,7 @@ export class BookdetailComponent implements OnInit {
 
     this.bookService.getBookIds().subscribe(bookIds => this.bookIds = bookIds);
     this.route.params.pipe(switchMap((params: Params) => this.bookService.getBook(params['id'])))
-    .subscribe(book => { this.book = book; this.setPrevNext(book.id); },
+    .subscribe(book => { this.book = book; this.bookcopy = book; this.setPrevNext(book.id); },
     errmess => this.errMess = <any>errmess);
   }
 
@@ -95,7 +96,12 @@ export class BookdetailComponent implements OnInit {
 
     var pushArray = {'rating': this.comment.rating, 'author': this.comment.author, 'date': date, 'comment': this.comment.comment}
 
-    this.book.comments.push(pushArray);
+    this.bookcopy.comments.push(pushArray);
+    this.bookService.putBook(this.bookcopy)
+      .subscribe(book => {
+        this.book = book; this.bookcopy = book;
+      },
+      errmess => { this.book = null; this.bookcopy = null; this.errMess = errmess; });
 
     this.commentForm.reset({
       author: '',

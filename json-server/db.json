@@ -1,280 +1,284 @@
 {
   "books": [
     {
-        "id": "0",
-        "name": "Harry Potter and The Chamber of Secrets",
-        "author": "J.K. Rowling",
-        "image": "images/Harry_Potter_2.png",
-        "genre": "Fiction",
-        "featured": false,
-        "label": "Best Fiction",
-        "price": "Rs. 290",
-        "description": "Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone . Dobby's sinister predictions seem to be coming true.",
-        "comments": [
-            {
-                "rating": 5,
-                "comment": "JK Rowling did an outstanding job. Loved it!",
-                "author": "John Lemon",
-                "date": "2021-03-16T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "It is mind-boggling how a person can be so creative in terms of fiction.",
-                "author": "Paul McVites",
-                "date": "2019-09-05T17:57:28.556094Z"
-            },
-            {
-                "rating": 3,
-                "comment": "Pheonix is the real hero in this book.",
-                "author": "Michael Jaikishan",
-                "date": "2020-02-13T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "Finished it on the first day itself. Was on the edge of my seat.",
-                "author": "Ringo Starry",
-                "date": "2021-03-02T17:57:28.556094Z"
-            }
-        ]
+      "id": "0",
+      "name": "Harry Potter and The Chamber of Secrets",
+      "author": "J.K. Rowling",
+      "image": "images/Harry_Potter_2.png",
+      "genre": "Fiction",
+      "featured": false,
+      "label": "Best Fiction",
+      "price": "Rs. 290",
+      "description": "Harry Potter's summer has included the worst birthday ever, doomy warnings from a house-elf called Dobby, and rescue from the Dursleys by his friend Ron Weasley in a magical flying car! Back at Hogwarts School of Witchcraft and Wizardry for his second year, Harry hears strange whispers echo through empty corridors - and then the attacks start. Students are found as though turned to stone . Dobby's sinister predictions seem to be coming true.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "JK Rowling did an outstanding job. Loved it!",
+          "author": "John Lemon",
+          "date": "2021-03-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "It is mind-boggling how a person can be so creative in terms of fiction.",
+          "author": "Paul McVites",
+          "date": "2019-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Pheonix is the real hero in this book.",
+          "author": "Michael Jaikishan",
+          "date": "2020-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Finished it on the first day itself. Was on the edge of my seat.",
+          "author": "Ringo Starry",
+          "date": "2021-03-02T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "author": "Tanmay Thakur",
+          "date": "2021-05-18T08:07:48.329Z",
+          "comment": "Brilliant!"
+        }
+      ]
     },
     {
-        "id": "1",
-        "name": "The Monk Who Sold His Ferrari",
-        "author": "Robin Sharma",
-        "image": "images/The_Monk_Who_Sold_His_Ferrari.png",
-        "genre": "Self-Help",
-        "featured": false,
-        "label": "Philosophical",
-        "price": "Rs. 250",
-        "description": "The Monk Who Sold His Ferrari is a revealing story that offers the readers a simple yet profound way to live life. The plot of this story revolves around Julian Mantle, a lawyer who has made his fortune and name in the profession. A sudden heart-attack creates havoc in the successful lawyer’s life. Jolted by the sudden onset of the illness, his practice comes to a standstill.",
-        "comments": [
-            {
-                "rating": 5,
-                "comment": "I feel Enlightened! Masterpiece by Robin.",
-                "author": "Hrishikesh",
-                "date": "2019-11-16T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "This knowledge is as pure as the Himalayan snow.",
-                "author": "Ryan Koshik",
-                "date": "2020-05-05T17:57:28.556094Z"
-            },
-            {
-                "rating": 3,
-                "comment": "I wish I had read this book in my 20s.",
-                "author": "Phillip Russel",
-                "date": "2014-04-13T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "Tears in my eyes. Phenomenal!",
-                "author": "Rishav Rajan",
-                "date": "2011-10-02T17:57:28.556094Z"
-            }
-        ]
+      "id": "1",
+      "name": "The Monk Who Sold His Ferrari",
+      "author": "Robin Sharma",
+      "image": "images/The_Monk_Who_Sold_His_Ferrari.png",
+      "genre": "Self-Help",
+      "featured": false,
+      "label": "Philosophical",
+      "price": "Rs. 250",
+      "description": "The Monk Who Sold His Ferrari is a revealing story that offers the readers a simple yet profound way to live life. The plot of this story revolves around Julian Mantle, a lawyer who has made his fortune and name in the profession. A sudden heart-attack creates havoc in the successful lawyer’s life. Jolted by the sudden onset of the illness, his practice comes to a standstill.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "I feel Enlightened! Masterpiece by Robin.",
+          "author": "Hrishikesh",
+          "date": "2019-11-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "This knowledge is as pure as the Himalayan snow.",
+          "author": "Ryan Koshik",
+          "date": "2020-05-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "I wish I had read this book in my 20s.",
+          "author": "Phillip Russel",
+          "date": "2014-04-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Tears in my eyes. Phenomenal!",
+          "author": "Rishav Rajan",
+          "date": "2011-10-02T17:57:28.556094Z"
+        }
+      ]
     },
     {
-        "id": "2",
-        "name": "Beyond Order",
-        "author": "Dr. Jordan Peterson",
-        "image": "images/Beyond_order.png",
-        "genre": "Psychology",
-        "featured": true,
-        "label": "Best Seller",
-        "price": "Rs. 450",
-        "description": "Now in this much-anticipated sequel, Peterson goes further, showing that part of life's meaning comes from reaching out into the domain beyond what we know, and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality.",
-        "comments": [
-            {
-                "rating": 5,
-                "comment": "We need to save this man at all costs.",
-                "author": "Veena Patel",
-                "date": "2021-11-16T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "I cleaned my room after this. Very effective.",
-                "author": "Akon Green",
-                "date": "2018-09-05T17:57:28.556094Z"
-            },
-            {
-                "rating": 3,
-                "comment": "Very verbose! Mind-boggling",
-                "author": "Suhas Chanda",
-                "date": "2015-02-13T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "Ultimate, Reaching for the stars!",
-                "author": "Shivam Ram Chandra",
-                "date": "2013-12-02T17:57:28.556094Z"
-            }
-        ]
+      "id": "2",
+      "name": "Beyond Order",
+      "author": "Dr. Jordan Peterson",
+      "image": "images/Beyond_order.png",
+      "genre": "Psychology",
+      "featured": true,
+      "label": "Best Seller",
+      "price": "Rs. 450",
+      "description": "Now in this much-anticipated sequel, Peterson goes further, showing that part of life's meaning comes from reaching out into the domain beyond what we know, and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "We need to save this man at all costs.",
+          "author": "Veena Patel",
+          "date": "2021-11-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "I cleaned my room after this. Very effective.",
+          "author": "Akon Green",
+          "date": "2018-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Very verbose! Mind-boggling",
+          "author": "Suhas Chanda",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate, Reaching for the stars!",
+          "author": "Shivam Ram Chandra",
+          "date": "2013-12-02T17:57:28.556094Z"
+        }
+      ]
     },
     {
-        "id": "3",
-        "name": "Sapiens",
-        "author": "Yuval Noah Harari",
-        "image": "images/Sapiens.png",
-        "genre": "Science",
-        "featured": false,
-        "label": "History",
-        "price": "Rs. 300",
-        "description": " Earth is 4.5 billion years old. In just a fraction of that time, one species among countless others has conquered it: us. In this bold and provocative book, Yuval Noah Harari explores who we are, how we got here and where we're going. ",
-        "comments": [
-            {
-                "rating": 5,
-                "comment": "I feel evolved after reading this.",
-                "author": "John Lemon",
-                "date": "2012-10-16T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "Humans are god's best creation. ",
-                "author": "Paul McVites",
-                "date": "2014-09-05T17:57:28.556094Z"
-            },
-            {
-                "rating": 3,
-                "comment": "Very nicely structured",
-                "author": "Michael Geller",
-                "date": "2015-02-13T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "Ultimate!",
-                "author": "Ringo Starry",
-                "date": "2013-12-02T17:57:28.556094Z"
-            }
-        ]
+      "id": "3",
+      "name": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "image": "images/Sapiens.png",
+      "genre": "Science",
+      "featured": false,
+      "label": "History",
+      "price": "Rs. 300",
+      "description": " Earth is 4.5 billion years old. In just a fraction of that time, one species among countless others has conquered it: us. In this bold and provocative book, Yuval Noah Harari explores who we are, how we got here and where we're going. ",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "I feel evolved after reading this.",
+          "author": "John Lemon",
+          "date": "2012-10-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Humans are god's best creation. ",
+          "author": "Paul McVites",
+          "date": "2014-09-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "Very nicely structured",
+          "author": "Michael Geller",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Ultimate!",
+          "author": "Ringo Starry",
+          "date": "2013-12-02T17:57:28.556094Z"
+        }
+      ]
     },
     {
-        "id": "5",
-        "name": "A Brief History of Time",
-        "author": "Dr. Stephen Hawking",
-        "image": "images/A_Brief_History_of_Time.png",
-        "genre": "Science",
-        "featured": false,
-        "label": "Nerdy",
-        "price": "Rs. 325",
-        "description": "Dr. Stephen Hawking explores the universe from it's beginning to it's possible end. Hawking explores the black holes and explains it in simple English.",
-        "comments": [
-            {
-                "rating": 5,
-                "comment": "Great work by Dr. Hawking",
-                "author": "Ravi Shanker",
-                "date": "2019-05-16T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "I feel like the brainiest person on the planet right now.",
-                "author": "Shikha Awasthi",
-                "date": "2010-12-05T17:57:28.556094Z"
-            },
-            {
-                "rating": 3,
-                "comment": "It's amazing.",
-                "author": "Shiv Prasad",
-                "date": "2015-02-13T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "Simply phenomenal!",
-                "author": "Amar Shikhre",
-                "date": "2013-12-02T17:57:28.556094Z"
-            }
-        ]
+      "id": "5",
+      "name": "A Brief History of Time",
+      "author": "Dr. Stephen Hawking",
+      "image": "images/A_Brief_History_of_Time.png",
+      "genre": "Science",
+      "featured": false,
+      "label": "Nerdy",
+      "price": "Rs. 325",
+      "description": "Dr. Stephen Hawking explores the universe from it's beginning to it's possible end. Hawking explores the black holes and explains it in simple English.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "Great work by Dr. Hawking",
+          "author": "Ravi Shanker",
+          "date": "2019-05-16T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "I feel like the brainiest person on the planet right now.",
+          "author": "Shikha Awasthi",
+          "date": "2010-12-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "It's amazing.",
+          "author": "Shiv Prasad",
+          "date": "2015-02-13T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Simply phenomenal!",
+          "author": "Amar Shikhre",
+          "date": "2013-12-02T17:57:28.556094Z"
+        }
+      ]
     },
     {
-        "id": "6",
-        "name": "Animal Farm",
-        "author": "George Orwell",
-        "image": "images/Animal_Farm.png",
-        "genre": "Fiction",
-        "featured": false,
-        "label": "Analogy",
-        "price": "Rs. 150",
-        "description": "As humans get ousted from Manor Farm and animals take control, their utopian fantasy of running a farm on the basis of equality soon begins to crumble before their eyes. The rebellion of the animals, led by the two pigs, Napoleon and Snowball, gives way to corrupt practices that lead to unthinkable consequences.",
-        "comments": [
-            {
-                "rating": 5,
-                "comment": "This novel is put cross through the eyes of Farm Animals who want freedom from Oppressing Humans.",
-                "author": "Ravi Shanker",
-                "date": "2010-01-15T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "Animal Farm is about our society. It's about the power, people holding it and how they become corrupt.",
-                "author": "Rizwana Sharma",
-                "date": "2010-12-05T17:57:28.556094Z"
-            },
-            {
-                "rating": 3,
-                "comment": "It's amazing.",
-                "author": "Shiv Prasad",
-                "date": "2011-02-14T17:57:28.556094Z"
-            },
-            {
-                "rating": 4,
-                "comment": "Classic!",
-                "author": "Elizabeth Singhania",
-                "date": "2011-10-12T17:57:28.556094Z"
-            }
-        ]
-    }
-
-],
-  "promotions": [
-    {
-        "id": "2",
-        "name": "Harry Potter and the Chamber of Secrets",
-        "author": "J. K. Rowling",
-        "image": "images/Harry_Potter_2.png",
-        "genre": "Fiction",
-        "featured": true,
-        "label": "Best-Fiction",
-        "price": "Rs. 290",
-        "description": "Now in this much-anticipated sequel, Peterson goes further, showing that part of life's meaning comes from reaching out into the domain beyond what we know, and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality."
+      "id": "6",
+      "name": "Animal Farm",
+      "author": "George Orwell",
+      "image": "images/Animal_Farm.png",
+      "genre": "Fiction",
+      "featured": false,
+      "label": "Analogy",
+      "price": "Rs. 150",
+      "description": "As humans get ousted from Manor Farm and animals take control, their utopian fantasy of running a farm on the basis of equality soon begins to crumble before their eyes. The rebellion of the animals, led by the two pigs, Napoleon and Snowball, gives way to corrupt practices that lead to unthinkable consequences.",
+      "comments": [
+        {
+          "rating": 5,
+          "comment": "This novel is put cross through the eyes of Farm Animals who want freedom from Oppressing Humans.",
+          "author": "Ravi Shanker",
+          "date": "2010-01-15T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Animal Farm is about our society. It's about the power, people holding it and how they become corrupt.",
+          "author": "Rizwana Sharma",
+          "date": "2010-12-05T17:57:28.556094Z"
+        },
+        {
+          "rating": 3,
+          "comment": "It's amazing.",
+          "author": "Shiv Prasad",
+          "date": "2011-02-14T17:57:28.556094Z"
+        },
+        {
+          "rating": 4,
+          "comment": "Classic!",
+          "author": "Elizabeth Singhania",
+          "date": "2011-10-12T17:57:28.556094Z"
+        }
+      ]
     }
   ],
-
+  "promotions": [
+    {
+      "id": "2",
+      "name": "Harry Potter and the Chamber of Secrets",
+      "author": "J. K. Rowling",
+      "image": "images/Harry_Potter_2.png",
+      "genre": "Fiction",
+      "featured": true,
+      "label": "Best-Fiction",
+      "price": "Rs. 290",
+      "description": "Now in this much-anticipated sequel, Peterson goes further, showing that part of life's meaning comes from reaching out into the domain beyond what we know, and adapting to an ever-transforming world. While an excess of chaos threatens us with uncertainty, an excess of order leads to a lack of curiosity and creative vitality."
+    }
+  ],
   "authors": [
     {
-        "id": "0",
-        "name": "Jordon B. Peterson",
-        "image": "images/Jordon_Peterson.jpg",
-        "age": "58",
-        "books": "12 Rules for Life, Beyond Order, Maps of Meaning.",
-        "featured": true,
-        "description": "Jordan Bernt Peterson is a Canadian professor of psychology at the University of Toronto, a clinical psychologist, and YouTube personality."
+      "id": "0",
+      "name": "Jordon B. Peterson",
+      "image": "images/Jordon_Peterson.jpg",
+      "age": "58",
+      "books": "12 Rules for Life, Beyond Order, Maps of Meaning.",
+      "featured": true,
+      "description": "Jordan Bernt Peterson is a Canadian professor of psychology at the University of Toronto, a clinical psychologist, and YouTube personality."
     },
     {
-        "id": "1",
-        "name": "Robin Sharma",
-        "image": "images/Robin_Sharma.jpg",
-        "age": "56",
-        "books": "The Monk Who Sold His Ferrari, Who Will Cry When You Die, The Saint, the Surfer, and the CEO.",
-        "featured": false,
-        "description": "Robin Sharma is a Canadian writer, best known for his The Monk Who Sold His Ferrari book series."
+      "id": "1",
+      "name": "Robin Sharma",
+      "image": "images/Robin_Sharma.jpg",
+      "age": "56",
+      "books": "The Monk Who Sold His Ferrari, Who Will Cry When You Die, The Saint, the Surfer, and the CEO.",
+      "featured": false,
+      "description": "Robin Sharma is a Canadian writer, best known for his The Monk Who Sold His Ferrari book series."
     },
     {
-        "id": "2",
-        "name": "Yuval Noah Harari",
-        "image": "images/Yuval_Noah_Harari.jpg",
-        "age": "45",
-        "books": "Sapiens, Homo Deus, 21 Lessons for the 21st Century.",
-        "featured": false,
-        "description": "Yuval Noah Harari is the author of the popular science bestsellers Sapiens: A Brief History of Humankind."
+      "id": "2",
+      "name": "Yuval Noah Harari",
+      "image": "images/Yuval_Noah_Harari.jpg",
+      "age": "45",
+      "books": "Sapiens, Homo Deus, 21 Lessons for the 21st Century.",
+      "featured": false,
+      "description": "Yuval Noah Harari is the author of the popular science bestsellers Sapiens: A Brief History of Humankind."
     },
     {
-        "id": "3",
-        "name": "J.K. Rowling",
-        "image": "images/JK_Rowling.jpg",
-        "age": "55",
-        "books": "The Harry Potter Series.",
-        "featured": false,
-        "description": "J. K. Rowling is a British author, philanthropist, film producer, television producer, and screenwriter."
+      "id": "3",
+      "name": "J.K. Rowling",
+      "image": "images/JK_Rowling.jpg",
+      "age": "55",
+      "books": "The Harry Potter Series.",
+      "featured": false,
+      "description": "J. K. Rowling is a British author, philanthropist, film producer, television producer, and screenwriter."
     }
-],
+  ],
   "feedback": []
 }
