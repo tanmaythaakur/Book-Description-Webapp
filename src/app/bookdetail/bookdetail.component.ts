@@ -6,11 +6,25 @@ import { BookService } from '../services/book.service';
 import { switchMap } from 'rxjs/operators';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Comment } from '../shared/comment';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-bookdetail',
   templateUrl: './bookdetail.component.html',
-  styleUrls: ['./bookdetail.component.scss']
+  styleUrls: ['./bookdetail.component.scss'],
+  animations: [
+    trigger('visibility', [
+      state('shown', style({
+        transform: 'scale(1.0)', 
+        opacity: 1
+      })),
+      state('hidden', style({
+        transform: 'scale(0.5)',
+        opacity: 0
+      })),
+      transition('* => *', animate('0.5s ease-in-out'))
+    ])
+  ]
 })
 export class BookdetailComponent implements OnInit {
 
@@ -22,6 +36,7 @@ export class BookdetailComponent implements OnInit {
   commentForm: FormGroup;
   comment: Comment;
   bookcopy: Book;
+  visibility = 'shown';
   @ViewChild('fform') commentFormDirective;
 
   formErrors = {
@@ -50,8 +65,9 @@ export class BookdetailComponent implements OnInit {
     this.createForm();
 
     this.bookService.getBookIds().subscribe(bookIds => this.bookIds = bookIds);
-    this.route.params.pipe(switchMap((params: Params) => this.bookService.getBook(params['id'])))
-    .subscribe(book => { this.book = book; this.bookcopy = book; this.setPrevNext(book.id); },
+    this.route.params
+      .pipe(switchMap((params: Params) => { this.visibility = 'hidden'; return this.bookService.getBook(params['id']); }))
+      .subscribe(book => {this.book = book; this.bookcopy = book; this.setPrevNext(book.id); this.visibility = 'shown'; },
     errmess => this.errMess = <any>errmess);
   }
 

@@ -1,7 +1,7 @@
 <div class="container" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column"
   fxLayoutAlign.gt-md="space-around center" fxLayoutGap="10px" fxLayoutGap.xs="0">
 
-  <div fxFlex="40" *ngIf="book">
+  <div fxFlex="40" *ngIf="book" [@visibility]="visibility">
     <div fxFlex>
       <mat-card>
         <mat-card-header>
@@ -12,6 +12,7 @@
 
         <img mat-card-image src="{{BaseURL + book.image}}" alt="{{book.name}}">
         <mat-card-content>
+          <h3>By {{book.author}}</h3>
           <p>{{book.description}}</p>
           <mat-card-actions>
             <button mat-button [routerLink]="['/bookdetail', prev]"><span class="fa fa-chevron-left fa-lg"></span></button>
@@ -26,7 +27,7 @@
     </div>
   </div>
 
-  <div fxFlex="40" *ngIf="book">
+  <div fxFlex="40" *ngIf="book" [@visibility]="visibility">
       <mat-list>
         <h3 matLine>Comments</h3>
         <mat-list-item *ngFor="let cmt of book.comments">
