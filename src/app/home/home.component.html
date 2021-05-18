@@ -17,9 +17,13 @@
     </mat-card-content>
   </mat-card>
 
-  <div [hidden]="book">
+  <div [hidden]="book || bookErrMess">
     <mat-spinner></mat-spinner>
     <h4>Loading... Please Wait</h4>
+  </div>
+  <div fxFlex *ngIf="bookErrMess">
+    <h2>Error</h2>
+    <h4>{{bookErrMess}}</h4>
   </div>
 
   <mat-card *ngIf="author" fxFlex>

@@ -24,6 +24,7 @@ import { LoginComponent } from './login/login.component';
 import { BookService } from './services/book.service';
 import { PromotionService} from './services/promotion.service';
 import { AuthorService } from './services/author.service';
+import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
 
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
@@ -77,6 +78,7 @@ import { baseURL } from './shared/baseurl';
     BookService,
     PromotionService,
     AuthorService,
+    ProcessHTTPMsgService,
     { provide: 'BaseURL', useValue: baseURL }
   ],
   entryComponents: [ // used for overlay

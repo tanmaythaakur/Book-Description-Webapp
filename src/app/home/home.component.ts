@@ -14,6 +14,7 @@ import { Author } from '../shared/author';
 export class HomeComponent implements OnInit {
 
   book: Book;
+  bookErrMess: string;
   promotion: Promotion;
   author: Author;
   constructor(private bookService: BookService, private promotionService: PromotionService, private authorService: AuthorService,
@@ -21,7 +22,8 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.bookService.getFeaturedBook()
-    .subscribe(book => this.book = book);
+    .subscribe(book => this.book = book,
+      errmess => this.bookErrMess = <any>errmess);
     this.promotionService.getFeaturedPromotion()
     .subscribe(promotion => this.promotion = promotion);
     this.authorService.getFeaturedAuthor()

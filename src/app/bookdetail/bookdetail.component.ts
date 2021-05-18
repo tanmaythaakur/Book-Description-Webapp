@@ -15,6 +15,7 @@ import { Comment } from '../shared/comment';
 export class BookdetailComponent implements OnInit {
 
   book: Book;
+  errMess: string;
   bookIds: string[];
   prev: string;
   next: string;
@@ -42,13 +43,15 @@ export class BookdetailComponent implements OnInit {
 
   constructor(private bookService: BookService,  private route: ActivatedRoute,private location: Location, private fb: FormBuilder,
     @Inject('BaseURL') private BaseURL) {
-    this.createForm();
   }
 
   ngOnInit() {
+    this.createForm();
+
     this.bookService.getBookIds().subscribe(bookIds => this.bookIds = bookIds);
     this.route.params.pipe(switchMap((params: Params) => this.bookService.getBook(params['id'])))
-    .subscribe(book => { this.book = book; this.setPrevNext(book.id); });
+    .subscribe(book => { this.book = book; this.setPrevNext(book.id); },
+    errmess => this.errMess = <any>errmess);
   }
 
   createForm() {
