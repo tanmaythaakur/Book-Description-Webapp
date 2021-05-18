@@ -9,7 +9,7 @@
         <h3><em>{{book.name | uppercase}}</em></h3>
       </mat-card-title>
     </mat-card-header>
-    <img mat-card-image src={{book.image}} alt={{book.name}} width="33%" height="500px">
+    <img mat-card-image src="{{ BaseURL + book.image}}" alt={{book.name}} width="33%" height="500px">
     <mat-card-content>
       <h3>By {{book.author}}</h3>
       <p>{{book.description}}

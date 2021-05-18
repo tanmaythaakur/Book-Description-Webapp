@@ -36,6 +36,8 @@ import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
+import { HttpClientModule } from '@angular/common/http';
+import { baseURL } from './shared/baseurl';
 
 @NgModule({
   declarations: [
@@ -68,12 +70,14 @@ import { MatSliderModule } from '@angular/material/slider';
     MatSlideToggleModule,
     MatSelectModule,
     MatProgressSpinnerModule,
-    MatSliderModule
+    MatSliderModule,
+    HttpClientModule,
   ],
   providers: [
     BookService,
     PromotionService,
-    AuthorService
+    AuthorService,
+    { provide: 'BaseURL', useValue: baseURL }
   ],
   entryComponents: [ // used for overlay
     LoginComponent

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, Inject } from '@angular/core';
 import { Params, ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Book } from '../shared/book';
@@ -40,7 +40,8 @@ export class BookdetailComponent implements OnInit {
 
   };
 
-  constructor(private bookService: BookService,  private route: ActivatedRoute,private location: Location, private fb: FormBuilder) {
+  constructor(private bookService: BookService,  private route: ActivatedRoute,private location: Location, private fb: FormBuilder,
+    @Inject('BaseURL') private BaseURL) {
     this.createForm();
   }
 

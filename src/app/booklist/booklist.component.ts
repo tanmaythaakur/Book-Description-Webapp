@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Book } from '../shared/book';
 import { BookService } from '../services/book.service';
 
@@ -10,16 +10,12 @@ import { BookService } from '../services/book.service';
 export class BooklistComponent implements OnInit {
 
   books: Book[];
-  selectedBook: Book;
 
-  constructor(private bookService: BookService) { }
+  constructor(private bookService: BookService,
+    @Inject('BaseURL') private BaseURL) { }
 
   ngOnInit() {
     this.bookService.getBooks().subscribe((books) => this.books = books);
-  }
-
-  onSelect(book: Book) {
-    this.selectedBook = book;
   }
 
 }

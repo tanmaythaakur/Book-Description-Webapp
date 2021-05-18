@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { Book } from '../shared/book';
 import { BookService } from '../services/book.service';
 import { Promotion } from '../shared/promotion';
@@ -16,7 +16,8 @@ export class HomeComponent implements OnInit {
   book: Book;
   promotion: Promotion;
   author: Author;
-  constructor(private bookService: BookService, private promotionService: PromotionService, private authorService: AuthorService) { }
+  constructor(private bookService: BookService, private promotionService: PromotionService, private authorService: AuthorService,
+    @Inject('BaseURL') private BaseURL) { }
 
   ngOnInit() {
     this.bookService.getFeaturedBook()
