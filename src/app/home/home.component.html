@@ -34,7 +34,7 @@
         <h3><em>{{author.name | uppercase}} {{ author.abbr | uppercase }}</em></h3>
       </mat-card-title>
     </mat-card-header>
-    <img mat-card-image src={{author.image}} alt={{author.name}}>
+    <img mat-card-image src="{{BaseURL +author.image}}" alt={{author.name}}>
     <mat-card-content>
       <p>{{ author.designation }}</p>
       <p>{{author.description}}
@@ -42,9 +42,14 @@
     </mat-card-content>
   </mat-card>
 
-  <div [hidden]="author">
+  <div [hidden]="author || authorErrMess">
     <mat-spinner></mat-spinner>
     <h4>Loading... Please Wait</h4>
+  </div>
+
+  <div fxFlex *ngIf="authorErrMess">
+    <h2>Error</h2>
+    <h4>{{authorErrMess}}</h4>
   </div>
 
   <mat-card *ngIf="promotion" fxFlex [@expand]>
@@ -55,7 +60,7 @@
         <h3><em>{{promotion.name | uppercase}}</em></h3>
       </mat-card-title>
     </mat-card-header>
-    <img mat-card-image src={{promotion.image}} alt={{promotion.name}} width="33%" height="500px">
+    <img mat-card-image src="{{BaseURL +promotion.image}}" alt={{promotion.name}} width="33%" height="500px">
     <mat-card-content>
       <h3>By {{promotion.author}}</h3>
       <p>{{promotion.description}}
@@ -63,9 +68,14 @@
     </mat-card-content>
   </mat-card>
 
-  <div [hidden]="promotion">
+  <div [hidden]="promotion || promotionErrMess">
     <mat-spinner></mat-spinner>
     <h4>Loading... Please Wait</h4>
+  </div>
+
+  <div fxFlex *ngIf="promotionErrMess">
+    <h2>Error</h2>
+    <h4>{{promotionErrMess}}</h4>
   </div>
 
 </div>

@@ -26,6 +26,8 @@ export class HomeComponent implements OnInit {
   bookErrMess: string;
   promotion: Promotion;
   author: Author;
+  authorErrMess: string;
+  promotionErrMess: string;
   constructor(private bookService: BookService, private promotionService: PromotionService, private authorService: AuthorService,
     @Inject('BaseURL') private BaseURL) { }
 
@@ -34,9 +36,11 @@ export class HomeComponent implements OnInit {
     .subscribe(book => this.book = book,
       errmess => this.bookErrMess = <any>errmess);
     this.promotionService.getFeaturedPromotion()
-    .subscribe(promotion => this.promotion = promotion);
+    .subscribe(promotion => this.promotion = promotion,
+      errmess => this.promotionErrMess = <any>errmess );
     this.authorService.getFeaturedAuthor()
-    .subscribe(author => this.author = author);
+    .subscribe(author => this.author = author,
+      errmess => this.authorErrMess = <any>errmess );
   }
 
 }

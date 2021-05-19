@@ -25,7 +25,7 @@
               <h2>Founder and CEO</h2>
             </mat-card-title>
           </mat-card-header>
-          <img src="/assets/images/founder.png" alt="Tanmay Thakur" height="80%" width="100%">
+          <img src="json-server\public\images\founder.png" alt="Tanmay Thakur" height="80%" width="100%">
           <mat-card-content>
             <h1>Tanmay Thakur</h1>
           </mat-card-content>
@@ -48,9 +48,9 @@
   <div fxFlex>
     <h2>Top Authors at a glance</h2>
     <div>
-      <mat-list *ngIf="authors" [@expand]>
+      <mat-list *ngIf="authors">
         <mat-list-item *ngFor="let author of authors">
-          <img matListAvatar src={{author.image}} alt={{author.name}}>
+          <img matListAvatar src="{{BaseURL +author.image}}" alt={{author.name}}>
           <h1 matLine> {{author.name}} </h1>
           <p matLine>
             <span> {{author.description}} </span>
@@ -59,9 +59,14 @@
       </mat-list>
     </div>
     
-    <div [hidden]="authors">
+    <div [hidden]="authors || errMess">
       <mat-spinner></mat-spinner>
       <h4>Loading . . . Please Wait</h4>
+    </div>
+    
+    <div fxFlex *ngIf="errMess">
+      <h2>Error</h2>
+      <h4>{{errMess}}</h4>
     </div>
 
   </div>
