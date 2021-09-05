@@ -13,3 +13,25 @@
 - The users can send feedback to the admins via the contact us form which is designed using reactive forms support of angular.
 
 - Rating and commenting functionality on individual books is provided and the feedback is posted on the json-server through HTTP support in angular.
+
+
+## Home Screen 
+![Home Screen](/Screenshots/home.png "Home")
+
+## Login Form
+![Login Form](/Screenshots/login.png "Login Form")
+
+## About Us 
+![About Us](/Screenshots/about.png "About")
+
+## Book List
+![Book List](/Screenshots/booklist.png "BookList")
+
+## Description
+![Description](/Screenshots/description.png "Description")
+
+## Contact us
+![Contact Us](/Screenshots/contact.png "Contact Us")
+
+## Requests to Backend 
+![Description](/Screenshots/backendRequests.jpeg "Backend Requests")
